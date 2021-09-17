@@ -14,9 +14,6 @@ jobs:
       - name: Prepare Zephyr codebase
         run: ./prepare_zephyr.sh
         shell: bash
-      - name: Install Zephyr build dependencies
-        run: |
-            pip install -r zephyr/zephyr/scripts/requirements.txt
       - name: Build Zephyr sample binaries
         run: ./build_binaries.sh
         shell: bash

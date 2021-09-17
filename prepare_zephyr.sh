@@ -43,3 +43,5 @@ wget --progress=dot:giga $ZEPHYR_SDK_URL
 chmod +x $ZEPHYR_SDK_FILENAME
 ./$ZEPHYR_SDK_FILENAME -- -y -d $ZEPHYR_SDK_INSTALL_DIR
 rm $ZEPHYR_SDK_FILENAME
+
+pip install -r zephyr/zephyr/scripts/requirements.txt
