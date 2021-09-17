@@ -6,7 +6,7 @@ using sysbus
 $name?="nRF52840"
 mach create $name
 
-machine LoadPlatformDescription @./nrf52840.repl
+machine LoadPlatformDescription $ORIGIN/nrf52840.repl
 
 # To use another binary, please set the "bin" variable before including this script, e.g.:
 # $bin=@artifacts/zephyr-hello_world.elf
