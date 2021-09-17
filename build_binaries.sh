@@ -15,4 +15,3 @@ pushd $ZEPHYR_BASE/samples/subsys/shell/shell_module
 west build -p auto -b nrf52840dk_nrf52840 -- -G'Unix Makefiles'
 popd
 cp $ZEPHYR_BASE/samples/subsys/shell/shell_module/build/zephyr/zephyr.elf artifacts/zephyr-shell_module.elf
-
