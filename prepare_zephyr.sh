@@ -3,6 +3,9 @@
 ZEPHYR_SHA="42fccba"
 ZEPHYR_SOURCE_URL="https://github.com/zephyrproject-rtos/zephyr/archive/${ZEPHYR_SHA}.zip"
 
+mkdir zephyr
+pushd zephyr
+
 wget -Ozephyr.zip "$ZEPHYR_SOURCE_URL"
 unzip zephyr.zip
 rm zephyr.zip
@@ -10,6 +13,7 @@ mv zephyr-* zephyr
 
 west init -l zephyr
 west update
+popd
 
 
 # Finding required version of the zephyr-sdk
@@ -33,7 +37,7 @@ ZEPHYR_SDK_FILENAME="zephyr-sdk-${SDK_VERSION}-linux-x86_64-setup.run"
 ZEPHYR_SDK_URL="$ZEPHYR_SDK_RELEASES_URL/v$SDK_VERSION/$ZEPHYR_SDK_FILENAME"
 
 export ZEPHYR_TOOLCHAIN_VARIANT=zephyr
-export ZEPHYR_SDK_INSTALL_DIR=$(pwd)/zephyr-sdk
+export ZEPHYR_SDK_INSTALL_DIR=$(pwd)/zephyr/sdk
 
 wget $ZEPHYR_SDK_URL
 chmod +x $ZEPHYR_SDK_FILENAME

@@ -1,7 +1,2 @@
 artifacts
-bootloader
-modules
-tools
 zephyr
-zephyr-sdk
-.west
