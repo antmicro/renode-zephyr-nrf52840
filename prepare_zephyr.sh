@@ -3,6 +3,7 @@
 ZEPHYR_SHA="42fccba"
 ZEPHYR_SOURCE_URL="https://github.com/zephyrproject-rtos/zephyr/archive/${ZEPHYR_SHA}.zip"
 
+python3 -m pip install west
 mkdir zephyr
 pushd zephyr
 
@@ -44,4 +45,4 @@ chmod +x $ZEPHYR_SDK_FILENAME
 ./$ZEPHYR_SDK_FILENAME -- -y -d $ZEPHYR_SDK_INSTALL_DIR
 rm $ZEPHYR_SDK_FILENAME
 
-pip install -r zephyr/zephyr/scripts/requirements.txt
+python3 -m pip install -r zephyr/zephyr/scripts/requirements.txt
