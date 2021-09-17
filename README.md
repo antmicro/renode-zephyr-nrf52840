@@ -6,11 +6,22 @@ This repository contains a script and test suite to simulate [Zephyr](https://gi
 
 ## Building
 
-To test it locally, build [latest Renode version](https://github.com/renode/renode/tree/master) from GitHub repository. For build instructions, please refer to [documentation](https://renode.readthedocs.io/en/latest/advanced/building_from_sources.html).
+To test it locally, build [the latest Renode version](https://github.com/renode/renode/tree/master) from GitHub repository. For build instructions, please refer to [documentation](https://renode.readthedocs.io/en/latest/advanced/building_from_sources.html).
+
+You can also use one of the pre-built [nightly packages](https://builds.renode.io).
+
+To build Zephyr samples, run:
+
+```
+./prepare_zephyr.sh
+./build_binaries.sh
+```
+
+Please not that the ``prepare_zephyr.sh`` script will install build dependencies on your host system.
 
 ## Usage
 
-To start the simulation, run the following in your compiled Renode:
+To start the simulation, run the following in Renode:
 
 ```
 (monitor) s @nrf52840.resc
@@ -34,4 +45,4 @@ You should be greeted with the following prompt on UART:
 uart:~$
 ```
 
-You can list all available commands using `help` command.
+You can list all available commands using the `help` command.
