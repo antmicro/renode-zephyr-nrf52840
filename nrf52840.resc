@@ -1,5 +1,5 @@
-:name: NRF52840
-:description: This script runs Zephyr Shell demo on NRF52840.
+:name: nRF52840
+:description: This script runs a sample Zephyr application on nRF52840.
 
 using sysbus
 
@@ -8,6 +8,9 @@ mach create $name
 
 machine LoadPlatformDescription @platforms/cpus/nrf52840.repl
 
+# To use another binary, please set the "bin" variable before including this script, e.g.:
+# $bin=@artifacts/zephyr-hello_world.elf
+# include @nrf52840.resc
 $bin?=@artifacts/zephyr-shell_module.elf
 showAnalyzer uart0
 

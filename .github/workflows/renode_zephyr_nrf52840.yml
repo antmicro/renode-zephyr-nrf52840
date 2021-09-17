@@ -7,17 +7,17 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: Prepare zephyr dependencies
+      - name: Prepare Zephyr dependencies
         run: |
             python -m pip install --upgrade pip
             pip install west
-      - name: Prepare zephyr codebase
+      - name: Prepare Zephyr codebase
         run: ./prepare_zephyr.sh
         shell: bash
-      - name: Install zephyr build dependencies
+      - name: Install Zephyr build dependencies
         run: |
             pip install -r zephyr/scripts/requirements.txt
-      - name: Build zephyr sample binaries
+      - name: Build Zephyr sample binaries
         run: ./build_binaries.sh
         shell: bash
       - name: Run tests
