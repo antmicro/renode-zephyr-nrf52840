@@ -7,7 +7,7 @@ From: ubuntu:20.04
 
 %post
     apt update
-    apt install -y python3-pip wget make
+    apt install -y python3-pip wget make unzip
     pip3 install psutil robotframework==4.0.1 pyyaml west
     apt install -y locales language-pack-en && locale-gen en_US.UTF-8
 
