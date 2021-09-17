@@ -16,7 +16,6 @@ Prepare Sample
 
     Execute Command             $bin="${CURDIR}/artifacts/${sample_name}.elf"
     Execute Script              ${SCRIPT}
-    Set Default Uart Timeout    60
     Create Terminal Tester      ${UART}
 
 *** Test Cases ***
