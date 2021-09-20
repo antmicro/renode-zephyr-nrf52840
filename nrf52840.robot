@@ -58,7 +58,7 @@ Should Return Pong
     Write Line to Uart          demo ping
     Wait for Line on Uart       pong
 
-Should Enumerate Avaiable Devices
+Should Enumerate Available Devices
     Requires                    booted-zephyr
     Write Line to uart          device list
     Wait for Line on Uart       devices:

@@ -17,7 +17,7 @@ To build Zephyr samples, run:
 ./build_binaries.sh
 ```
 
-Please not that the ``prepare_zephyr.sh`` script will install build dependencies on your host system.
+Please note that the ``prepare_zephyr.sh`` script will install build dependencies on your host system.
 
 ## Usage
 
