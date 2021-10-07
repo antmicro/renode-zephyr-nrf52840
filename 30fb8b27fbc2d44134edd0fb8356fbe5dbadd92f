@@ -1,0 +1,11 @@
+{
+    "tags": [
+      "renode",
+      "cortex-m",
+      "zephyr",
+      "nrf52840",
+      "nordic",
+      "continuous-integration"
+    ],
+    "categories": ["Edge AI & Software", "Cloud Systems"],
+}
