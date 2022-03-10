@@ -32,7 +32,7 @@ This will run a Zephyr shell sample bundled with [Zephyr source-code](https://gi
 To run sample test cases, run the following command in your console:
 
 ```
-path-to/renode/test.sh nrf52840.robot
+path-to/renode/renode-test nrf52840.robot
 ```
 
 or fork this project and observe results in GitHub Actions CI workflow.
